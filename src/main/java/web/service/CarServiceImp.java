@@ -3,10 +3,8 @@ package web.service;
 import web.dao.CarDao;
 import web.dao.CarDaoImp;
 import web.model.Car;
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class CarServiceImp implements CarService {
 
@@ -20,7 +18,6 @@ public class CarServiceImp implements CarService {
         cars.add(new Car("Car3", "2003", "3"));
         cars.add(new Car("Car4", "2004", "4"));
         cars.add(new Car("Car5", "2005", "5"));
-//        return dao.getCountByCarList(cars).stream().limit(count).collect(Collectors.toList());
         return dao.getCountByCarList(cars, count);
     }
 }
