@@ -41,10 +41,8 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
-                "model='" + model + '\'' +
-                ", year='" + year + '\'' +
-                ", series='" + series + '\'' +
-                '}';
+        return "model: '" + model + '\'' +
+                "\tyear: '" + year + '\'' +
+                "\tseries: '" + series + '\'';
     }
 }
